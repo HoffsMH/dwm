@@ -6,11 +6,11 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
-static const int showsystray        = 1;     /* 0 means no systray */
-static const unsigned int gappx     = 10;        /* gaps between windows */
+static const int showsystray        = 0;     /* 0 means no systray */
+static const unsigned int gappx     = 40;        /* gaps between windows */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Inconsolata Nerd Font:size=9" };
+static const char *fonts[]          = { "Cantarell:size=9" };
 static const char dmenufont[]       = "Inconsolata Nerd Font:size=25";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -24,7 +24,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6" };
 
 #include "nextprevtag.c"
 
