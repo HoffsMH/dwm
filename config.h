@@ -10,6 +10,8 @@ static const int showsystray        = 0;     /* 0 means no systray */
 static const unsigned int gappx     = 70;        /* gaps between windows */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const int usealtbar          = 1;        /* 1 means use non-dwm status bar */
+static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *fonts[]          = { "Helvetica:size=9" };
 static const char dmenufont[]       = "Inconsolata Nerd Font:size=25";
 static const char col_gray1[]       = "#222222";
