@@ -54,6 +54,7 @@ static const Layout layouts[] = {
   { "tile",      tile },    /* first entry is default */
   { "null",      NULL },    /* no layout function means floating behavior */
   { "monocle",      monocle },
+  { "deck",      deck },
   { NULL,       NULL },
 };
 
@@ -93,6 +94,7 @@ static Key keys[] = {
   { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
   { MODKEY,                       XK_p,      setlayout,      {.v = &layouts[2]} },
   { MODKEY,                       XK_space,  setlayout,      {0} },
+  { MODKEY,                       XK_y,      setlayout,      {.v = &layouts[3]} },
   { MODKEY,                       XK_bracketleft,  cyclelayout,    {.i = -1 } },
   { MODKEY,                       XK_bracketright, cyclelayout,    {.i = +1 } },
   { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
