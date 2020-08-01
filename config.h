@@ -36,14 +36,15 @@ static const Rule rules[] = {
    *	WM_NAME(STRING) = title
     https://dwm.suckless.org/customisation/tagmask/
    */
-  /* class      instance    title       tags mask     isfloating   monitor */
-  { "Gimp",     NULL,       NULL,       0,            1,           -1 },
-  { "firefox",  NULL,       NULL,       1 << 2,       0,           -1 },
-  { "Brave",  NULL,       NULL,       1 << 2,       0,           -1 },
-  { "Slack",  NULL,       NULL,         1 << 3,       0,           -1 },
-  { "discord",  NULL,       NULL,       1 << 3,       0,           -1 },
-  { "chrome",  NULL,       NULL,        1 << 1,       0,           -1 },
-  { "Peek",     NULL,       NULL,       0,            1,           -1 },
+  /* class      instance    title       tags mask     iscentered   isfloating   monitor */
+  { "Gimp",     NULL,       NULL,       0,            0,           1,           -1 },
+  { "firefox",  NULL,       NULL,       1 << 2,       0,           0,           -1 },
+  { "Brave",  NULL,       NULL,         1 << 2,       0,           0,           -1 },
+  { "Slack",  NULL,       NULL,         1 << 3,       0,           0,           -1 },
+  { "discord",  NULL,       NULL,       1 << 3,       0,           0,           -1 },
+  { "chrome",  NULL,       NULL,        1 << 1,       0,           0,           -1 },
+  { "Peek",     NULL,       NULL,       0,            0,           1,           -1 },
+  { "gcr-prompter",     NULL,       NULL,       1,            1,           1,           -1 },
 };
 
 /* layout(s) */
