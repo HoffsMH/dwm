@@ -43,8 +43,7 @@ static const Rule rules[] = {
   { "Slack",  NULL,       NULL,         1 << 3,       0,           0,           -1 },
   { "discord",  NULL,       NULL,       1 << 3,       0,           0,           -1 },
   { "chrome",  NULL,       NULL,        1 << 1,       0,           0,           -1 },
-  { "Peek",     NULL,       NULL,       0,            0,           1,           -1 },
-  { "gcr-prompter",     NULL,       NULL,       1,            1,           1,           -1 },
+  { "Peek",     NULL,       NULL,       0,            1,           1,           -1 },
 };
 
 /* layout(s) */
