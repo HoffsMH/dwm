@@ -53,7 +53,7 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
   /* symbol     arrange function */
-  { "ﱖ ",      tile },    /* first entry is default */
+  { "ﱖ  ",      tile },    /* first entry is default */
   { "﯑ ",      NULL },    /* no layout function means floating behavior */
   { " ",   monocle },
   { "﬷    ",      deck },
@@ -100,8 +100,8 @@ static Key keys[] = {
   { MODKEY,                       XK_bracketleft,  cyclelayout,    {.i = -1 } },
   { MODKEY,                       XK_bracketright, cyclelayout,    {.i = +1 } },
   { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-  { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-  { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+  // { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+  // { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
   { MODKEY,                       XK_e,  focusmon,           {.i = -1 } },
   { MODKEY,                       XK_r, focusmon,            {.i = +1 } },
   { MODKEY|ShiftMask,             XK_e,  tagmon,         {.i = -1 } },
@@ -116,7 +116,6 @@ static Key keys[] = {
   TAGKEYS(                        XK_6,                      5)
   TAGKEYS(                        XK_7,                      6)
   TAGKEYS(                        XK_8,                      7)
-  TAGKEYS(                        XK_9,                      8)
   { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
